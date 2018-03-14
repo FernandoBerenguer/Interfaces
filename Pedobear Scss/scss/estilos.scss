@@ -1,0 +1,292 @@
+$color_1: #8A542E;
+$color_2: black;
+$color_3: #d45252;
+$font_family_1: 'Bubblegum Sans', cursive;
+$font_family_2: 'Shadows Into Light', cursive;
+$font_family_3: 'Ribeye Marrow', cursive;
+$background_color_1: #F0DBB0;
+$background_color_2: #2CBD77;
+$ancho: 100%;
+
+/* Fuentes
+
+font-family: 'Ribeye Marrow', cursive;
+font-family: 'Bubblegum Sans', cursive;
+font-family: 'Shadows Into Light', cursive;
+*/
+/*menu horizontal*/
+/* CONTENIDO */
+/* CSS ICONOS SOCIALES EFECTO HOVER */
+/* formulario*/
+#cabecera {
+	float: left;
+	position: relative;
+	width: 200px;
+	height: 200px;
+	padding-top: 60px;
+}
+#principal {
+	width: $ancho;
+	height: 200px;
+}
+header {
+	width: $ancho;
+	height: 60px;
+	float: left;
+	position: absolute;
+	z-index: 100;
+	margin: auto;
+	text-align: center;
+}
+body {
+	width: $ancho;
+	height: $ancho;
+	font-family: $font_family_1;
+	background-color: $background_color_1;
+	font-size: 1.25em;
+}
+img#logo {
+	width: $ancho;
+	height: $ancho;
+}
+#titular {
+	width: 300px;
+	height: 200px;
+	float: left;
+	padding-left: 10px;
+	padding-top: 40px;
+}
+#title {
+	font-size: 6.25em;
+	font-weight: bold;
+	font-family: $font_family_2;
+	color: $color_1;
+}
+#subtitle {
+	font-family: $font_family_2;
+	font-size: 3.75em;
+	color: $color_1;
+}
+#footer {
+	float: left;
+	padding: 37px 200px;
+}
+nav {
+	float: left;
+	position: fixed;
+	width: $ancho;
+	ul {
+		width: $ancho;
+		float: left;
+		list-style: none;
+		overflow: hidden;
+		margin: -8px;
+		background-color: $background_color_2;
+		font-family: $font_family_1;
+		li {
+			float: left;
+			font-size: 16px;
+			width: $ancho*0.25;
+			a {
+				display: inline-block;
+				padding: 20px;
+				font-size: 1em;
+				color: $color_1;
+				text-decoration: none;
+			}
+			&:hover {
+				background: #58978A;
+			}
+		}
+	}
+}
+div {
+	float: left;
+	width: $ancho;
+
+	#contenido {
+		@extend div;
+		height: $ancho;
+	}
+	#home {
+		float: left;
+		width: $ancho;
+		padding-left: 20px;
+	}
+	#servicios {
+		@extend #home;
+	}
+	#galeria {
+		@extend #home;
+	}
+	#contacto {
+		@extend #home;
+	}
+	.formulario {
+		float: left;
+		width: 700px;
+		height: 500px;
+		padding-left: 20px;
+	}
+}
+h1, h2 {
+	color: $color_1;
+	font-family: $font_family_3;
+}
+.inicio {
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 80px;
+	text-align: justify;
+	border-left: 2px dashed $color_1;
+}
+.servicios {
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: justify;
+	border-left: 2px dashed $color_1;
+}
+.galeria {
+	float: left;
+	border-left: 2px dashed $color_1;
+	>div {
+		>img {
+			float: left;
+			width: 400px;
+			height: 300px;
+			margin: 50px;
+		}
+	}
+}
+.address {
+	float: left;
+	width: $ancho*0.4;
+	padding-left: 40px;
+	border-left: 2px dashed $color_1;
+}
+.frase {
+	font-size: 1.5625em;
+	font-style: italic;
+}
+address {
+	p {
+		margin: 30px;
+		a {
+			text-decoration: none;
+			color: $color_2;
+			&:hover {
+				text-decoration: none;
+				color: $color_1;
+			}
+		}
+	}
+}
+ul {
+	#iconos {
+		width: 216px;
+		height: 144px;
+		margin: 10px 0 0 0;
+		padding: 5px 0 0 0;
+		li {
+			list-style: none;
+			float: left;
+		}
+	}
+}
+#iconos {
+	li {
+		a {
+			width: 72px;
+			height: 72px;
+			display: block;
+			background: url("img/rrss.png") no-repeat;
+			transition: all 0.5s ease;
+		}
+		#facebook {
+			a {
+				background-position: 0 0;
+				&:hover {
+					background-position: 0 -72px;
+				}
+			}
+		}
+		#instagram {
+			a {
+				background-position: -72px 0;
+				&:hover {
+					background-position: -72px -72px;
+				}
+			}
+		}
+		#twitter {
+			a {
+				background-position: -144px 0;
+				&:hover {
+					background-position: -144px -72px;
+				}
+			}
+		}
+	}
+}
+.contact_form {
+	ul {
+		width: 75%;
+		list-style-type: none;
+		list-style-position: outside;
+		margin: 0px;
+		padding: 0px;
+	}
+	li {
+		padding: 12px;
+		position: relative;
+		margin: 30px;
+	}
+	h2 {
+		margin: 0;
+		display: inline;
+	}
+	label {
+		width: 150px;
+		margin-top: 3px;
+		display: inline-block;
+		float: left;
+		padding: 3px;
+		font-family: $font_family_1;
+	}
+	input {
+		height: 20px;
+		width: 220px;
+		padding: 5px 8px;
+		border: 1px solid #aaa;
+		box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+		border-radius: 2px;
+		padding-right: 30px;
+		-moz-transition: padding .25s;
+		-webkit-transition: padding .25s;
+		-o-transition: padding .25s;
+		transition: padding .25s;
+	}
+	textarea {
+		padding: 8px;
+		width: 300px;
+		border: 1px solid #aaa;
+		box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+		border-radius: 2px;
+		padding-right: 30px;
+		-moz-transition: padding .25s;
+		-webkit-transition: padding .25s;
+		-o-transition: padding .25s;
+		transition: padding .25s;
+	}
+	button {
+		margin-left: 156px;
+	}
+}
+.required_notification {
+	color: $color_3;
+	margin: 5px 0 0 0;
+	display: inline;
+	float: right;
+}

@@ -1,0 +1,139 @@
+/* Fuentes
+
+font-family: 'Ribeye Marrow', cursive;
+font-family: 'Bubblegum Sans', cursive;
+font-family: 'Shadows Into Light', cursive;
+*/
+
+nav, .dropdown-menu {
+	background-color: #F0DBB0;
+}
+
+.navbar-toggler {
+	background-color: #F0DBB0;
+	border: 2px solid #8A542E;
+}
+
+div a, .dropdown-item {
+	color: #8A542E;
+}
+
+nav a:hover, li a:hover, .dropdown-item:hover, .dropdown-item:active {
+	color: #58978A;
+	background-color: #F0DBB0;
+}
+
+img[alt="logo"] {
+	width:40px;
+	transition: all 3s ease-in-out;
+}
+
+img[alt="logo"]:hover 
+{
+	transform: rotate(360deg) scale(1.5);
+}
+
+img[alt="asoma"] 
+{
+	animation: 3s slidein;
+	width: 8%;
+	position: absolute;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: -30%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+img[alt="vueltas"] 
+{
+	width: 40px;
+	position: absolute;
+	animation: vuelta 20s infinite linear;
+	
+}
+
+@keyframes vuelta {
+	0% {transform: translateX(300px);}
+	25% { transform: translateX(1500px) scale(2); }
+	50% { transform: translateY(700px) translateX(1500px);}
+	75% { transform: translateY(700px) translateX(300px) rotate(80deg);}
+	100% {transform: translateX(300px);}
+
+}
+
+nav a, li a {
+	color: #8A542E;
+	transition: all 3s;
+}
+.nav-link:hover {
+
+	transform: rotateY(360deg);
+}
+
+body {
+	font-family: 'Bubblegum Sans', cursive;
+	 font-size: 20px;
+}
+
+.jumbotron {
+	margin-bottom: 0;
+}
+
+#section2 {
+	background-color: #58978A;
+	color: #8A542E;
+	padding-top: 76px;
+}
+
+#section1, #section3 {
+	background-color: #58978A;
+	padding-top: 76px;
+}
+
+#section4 {
+	padding-top: 76px;
+}
+
+.card{
+	background-color: #F0DBB0;
+}
+
+.card-link {
+	color: #58978A;
+}
+
+.card-link:hover {
+	color: #8A542E;
+}
+
+
+ .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+
+  #demo {
+  	width: 60%;
+  }
+
+  h1, h2, h3 {
+  font-family: 'Ribeye Marrow', cursive;
+}
+
+#contacto {
+	padding-top: 20px;
+}
+
+#rrss a {
+	color: black;
+}
+
+#rrss a:hover {
+	color: #58978A;
+}
